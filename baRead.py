@@ -12,8 +12,9 @@ fnums = video.get(cv2.CAP_PROP_FRAME_COUNT)
 print('fps:', fps, 'size:', size, 'fnums: ', fnums)
 
 
-f = open('demo.txt', 'a')
+f = open('demo.txt', 'w')
 
+mm=0
 success, frame = video.read()
 while success:
     for i in range(size[1]//20):
@@ -25,11 +26,12 @@ while success:
                 img = img + ' '
         f.write(img)
         f.write('\n')
+    mm = mm + 1
     success, frame = video.read()
 
 
 f.close()
-
+print(mm)
 
 
 #print(img)
