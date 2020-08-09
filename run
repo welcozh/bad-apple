@@ -1,0 +1,17 @@
+#!/bin/bash
+
+clear
+
+for i in $(seq 1 100);
+do
+    echo ""
+done
+
+for line in $(seq 1 54 509760);
+do
+    #echo $line
+    cat demo.txt | tail -n +$line | head -n 54
+    sleep 0.0333s
+done
+
+
