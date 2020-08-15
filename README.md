@@ -13,4 +13,4 @@
 在Ubuntu16.04的命令行里进行测试，能够流畅的播出。通过ssh远程连接服务器后显示会有闪屏，效果不佳，主要原因是ssh后会有网速延迟。
 
 ## Demo
-![Image text](image/demo.jpg)
+![Image text](image/demo.jpg){:height="50%" width="50%"}
