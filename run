@@ -7,7 +7,9 @@ do
     echo ""
 done
 
-for line in $(seq 1 54 509760);
+num=`sed -n '$=' demo.txt`
+
+for line in $(seq 1 54 $num);   # 509760
 do
     #echo $line
     cat demo.txt | tail -n +$line | head -n 54
